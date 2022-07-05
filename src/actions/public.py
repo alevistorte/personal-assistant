@@ -9,9 +9,10 @@ PLATAFORMAS = ('COMERCIO ELECTRONICO', 'SOPORTE PLATAFORMA OPERACION',
 GITO = ('GITO')
 
 # files
-TICKETS = '/home/alevistorte/Documents/00Projects/personal-assistant/data/tickets.xls'
-USERS_DB = '/home/alevistorte/Documents/00Projects/personal-assistant/data/usuariosDB.xlsx'
-TICKETS_DB = '/home/alevistorte/Documents/00Projects/personal-assistant/data/ticketsDB.xlsx'
+PATH = '/home/alevistorte/Documents/00Projects/personal-assistant/'
+TICKETS = PATH + '/data/tickets.xls'
+USERS_DB = PATH + '/data/usuariosDB.xlsx'
+TICKETS_DB = PATH + 'data/ticketsDB.xlsx'
 
 
 def isIncluded(iterable, value):

@@ -1,4 +1,5 @@
 import argparse
+from actions.get_alarms import get_alarms
 
 from actions.update_tickets import *
 
@@ -31,7 +32,8 @@ elif(args.informe == 'present'):
     print('Realizar informe para la reunion de operaciones')
 
 elif(args.alarmas == 'present'):
-    print('Realizar resumen de alarmas')
+    alarmas = get_alarms()
+    print(alarmas)
 
 elif(args.usuarios == 'present'):
     print("Resumen de usuarios")
