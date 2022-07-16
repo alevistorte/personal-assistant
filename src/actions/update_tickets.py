@@ -13,11 +13,11 @@ def update_tickets():
     uPlataforma = []
     uGito = []
     for u in users.itertuples():
-        if(isIncluded(PLATAFORMAS, u[7])):
-            uPlataforma.append(u[8] + ' ' + u[9])
+        if(isIncluded(PLATAFORMAS, u[6])):
+            uPlataforma.append(u[7] + ' ' + u[8])
             continue
-        if(u[7] == 'GITO'):
-            uGito.append(u[8] + ' ' + u[9])
+        if(u[6] == 'GITO'):
+            uGito.append(u[7] + ' ' + u[8])
 
     '''
     Esta es la cabecera de los tickets
@@ -30,7 +30,7 @@ def update_tickets():
 
 
     Esta es la cabecera del archivo de los usuarios actualizados con sus departamentos
-    ['Unnamed: 0', 'Login', 'Dominio', 'Correo', 'Móvil', 'Cargo',
+    ['Login', 'Dominio', 'Correo', 'Móvil', 'Cargo',
        'Departamento', 'Nombre', 'Apellido', 'Provincia', 'Area', 'Disponible',
        'Notificar x Sms', 'Notificar x Email', 'Notificar Sólo Hecho Extra']
 

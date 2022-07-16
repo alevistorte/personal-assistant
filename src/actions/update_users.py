@@ -29,9 +29,6 @@ def update_users():
                 break
 
     USERS_DB = '/home/alevistorte/Documents/00Projects/personal-assistant/data/usuariosDB.xlsx'
-    users.to_excel(USERS_DB)
+    users.to_excel(USERS_DB, index=False)
 
     print('La actualizacion ha terminado. Puede ver los resultado en ', USERS_DB)
-
-
-update_users()
